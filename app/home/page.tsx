@@ -1,5 +1,6 @@
 "use client"; // ✅ Required for client-side hooks
 
+
 import withAuth from "@/utils/withAuth";
 
 const Home = () => {
@@ -9,8 +10,8 @@ const Home = () => {
     };
     
   return (
-    <div>
-        <h1>Welcome to the Home!</h1>
+    <div className="h-screen w-full bg-red-300">
+        <h1 className="bg-green-300">Welcome to the Home!</h1>
         <button onClick={handleLogout}>Logout</button>
     </div>
   );
