@@ -6,7 +6,7 @@ export const generateToken = (userId: string, userEmail: string) => {
   return jwt.sign(
         { id: userId, email: userEmail },
         process.env.NEXTAUTH_SECRET as string,
-        { expiresIn: "1h" }
+        { expiresIn: "1m" }
       );
 };
 
